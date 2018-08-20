@@ -39,7 +39,8 @@ public class DetailActivity extends AppCompatActivity {
             String movieUserRating = intentThatStartedThisActivity.getStringExtra("MovieUserRating");
             String movieReleaseDate = intentThatStartedThisActivity.getStringExtra("MovieReleaseDate");
 
-            Picasso.with(this).load(moviePoster).into(mMoviePoster);
+            Picasso.get().load(moviePoster).into(mMoviePoster);
+
             mMovieTitle.setText(movieTitle);
             mMovieSynopsis.setText(movieSynopsis);
             mMovieUserRating.setText(movieUserRating);

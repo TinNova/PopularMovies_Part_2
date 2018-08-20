@@ -61,8 +61,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         Movie movie = movies.get(position);
 
-        Picasso.with(context).load(movie.getPosterImageUrl())
-                .into(viewHolder.imageViewPoster);
+        Picasso.get().load(movie.getPosterImageUrl()).into(viewHolder.imageViewPoster);
 
     }
 
